@@ -7,12 +7,37 @@
         mc:Ignorable="d"
         ResizeMode="NoResize"
         Title="X0-MAP-2024-OPREA_IOAN" Height="500" Width="500">
-    <Grid>
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="0.5"/>
+            <Setter Property="FontSize" Value="90"/>
+        </Style>
+    </Window.Resources>
+    
+    
+    <Grid x:Name="Container">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Click="Button_Click" x:Name="Button0_0" Grid.Column="0" Grid.Row="0" Content="X" />
+        <Button Click="Button_Click" x:Name="Button1_0" Grid.Column="1" Grid.Row="0" Content="O"/>
+        <Button Click="Button_Click" x:Name="Button2_0" Grid.Column="2" Grid.Row="0"/>
+                
+        <Button Click="Button_Click" x:Name="Button0_1" Grid.Column="0" Grid.Row="1" />
+        <Button Click="Button_Click" x:Name="Button1_1" Grid.Column="1" Grid.Row="1" />
+        <Button Click="Button_Click" x:Name="Button2_1" Grid.Column="2" Grid.Row="1"/>
+                 
+        <Button Click="Button_Click" x:Name="Button0_2" Grid.Column="0" Grid.Row="2" />
+        <Button Click="Button_Click" x:Name="Button1_2" Grid.Column="1" Grid.Row="2" />
+        <Button Click="Button_Click" x:Name="Button2_2" Grid.Column="2" Grid.Row="2"/>
     </Grid>
 
 </Window>
